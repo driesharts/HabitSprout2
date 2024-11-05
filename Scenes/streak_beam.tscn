@@ -1,0 +1,184 @@
+[gd_scene load_steps=20 format=3 uid="uid://cr38txatl6ikg"]
+
+[ext_resource type="Texture2D" uid="uid://basmfsoxjo6tn" path="res://Piskel/sunbeam15.0.png" id="1_wxe8e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0kn7"]
+atlas = ExtResource("1_wxe8e")
+region = Rect2(0, 0, 216, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1v5gl"]
+atlas = ExtResource("1_wxe8e")
+region = Rect2(216, 0, 216, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_alhvy"]
+atlas = ExtResource("1_wxe8e")
+region = Rect2(432, 0, 216, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yneqq"]
+atlas = ExtResource("1_wxe8e")
+region = Rect2(648, 0, 216, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_27p1k"]
+atlas = ExtResource("1_wxe8e")
+region = Rect2(864, 0, 216, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gd8gv"]
+atlas = ExtResource("1_wxe8e")
+region = Rect2(1080, 0, 216, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_147a7"]
+atlas = ExtResource("1_wxe8e")
+region = Rect2(1296, 0, 216, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s6kwe"]
+atlas = ExtResource("1_wxe8e")
+region = Rect2(1512, 0, 216, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nxwg"]
+atlas = ExtResource("1_wxe8e")
+region = Rect2(1728, 0, 216, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bwx5x"]
+atlas = ExtResource("1_wxe8e")
+region = Rect2(1944, 0, 216, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17k8c"]
+atlas = ExtResource("1_wxe8e")
+region = Rect2(2160, 0, 216, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24nh3"]
+atlas = ExtResource("1_wxe8e")
+region = Rect2(2376, 0, 216, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e6cgg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0kn7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1v5gl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_alhvy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yneqq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_27p1k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gd8gv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_147a7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s6kwe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0nxwg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bwx5x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_17k8c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24nh3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="Animation" id="Animation_qakqd"]
+resource_name = "appear"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(2.63902, 1),
+"update": 0,
+"values": [Vector2(76, -300), Vector2(76, -76)]
+}
+
+[sub_resource type="Animation" id="Animation_onlnd"]
+resource_name = "disappear"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(2.63902, 1),
+"update": 0,
+"values": [Vector2(76, -76), Vector2(76, -300)]
+}
+
+[sub_resource type="Animation" id="Animation_p4a7h"]
+resource_name = "size"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6),
+"transitions": PackedFloat32Array(1, 2, 2),
+"update": 0,
+"values": [Vector2(1.06, 1), Vector2(1.07, 1), Vector2(1.06, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_8mo5m"]
+resource_name = "whiteout"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 4, 5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.4), Color(1, 1, 1, 0.4), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sw8od"]
+_data = {
+"appear": SubResource("Animation_qakqd"),
+"disappear": SubResource("Animation_onlnd"),
+"size": SubResource("Animation_p4a7h"),
+"whiteout": SubResource("Animation_8mo5m")
+}
+
+[node name="StreakBeam" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.4)
+position = Vector2(74, -72)
+scale = Vector2(1.06, 1)
+sprite_frames = SubResource("SpriteFrames_e6cgg")
+autoplay = "default"
+frame_progress = 0.654433
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedSprite2D"]
+autoplay = "size"
+libraries = {
+"": SubResource("AnimationLibrary_sw8od")
+}

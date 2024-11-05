@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://deuipt7wr5jse"]
+
+[ext_resource type="Texture2D" uid="uid://dpdqhs7nq5koc" path="res://Piskel/backgrounds/clouds-6.png (3).png" id="1_28ape"]
+[ext_resource type="Texture2D" uid="uid://dcbfid70q6u43" path="res://Piskel/backgrounds/clouds-3.png (2).png" id="2_1lf0y"]
+[ext_resource type="Texture2D" uid="uid://b1jb5rdfh4bq6" path="res://Piskel/backgrounds/clouds-9.png (1).png" id="3_i1ma8"]
+[ext_resource type="Texture2D" uid="uid://cqv4dun0df4tr" path="res://Piskel/backgrounds/clouds-4.png.png" id="4_6phij"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.1, 0.1)
+motion_mirroring = Vector2(1294, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(648, 324)
+scale = Vector2(2.531, 2.531)
+texture = ExtResource("1_28ape")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.1, 0.1)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(648, 324)
+scale = Vector2(2.531, 2.531)
+texture = ExtResource("2_1lf0y")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.01, 0.01)
+motion_mirroring = Vector2(1294, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(648, 324)
+scale = Vector2(2.531, 2.531)
+texture = ExtResource("3_i1ma8")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(1294, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(648, 324)
+scale = Vector2(2.531, 2.531)
+texture = ExtResource("4_6phij")

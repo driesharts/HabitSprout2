@@ -1,0 +1,97 @@
+[gd_scene load_steps=14 format=3 uid="uid://g3ttyl8r1w75"]
+
+[ext_resource type="Script" path="res://Scripts/deer.gd" id="1_dgdf1"]
+[ext_resource type="Texture2D" uid="uid://ci8y8pfw3lw1q" path="res://Piskel/antleridle2.png" id="2_tbbkv"]
+[ext_resource type="Texture2D" uid="uid://c7fgcsnbp0qu5" path="res://Piskel/antlersleeping.png" id="3_xw8jb"]
+[ext_resource type="Texture2D" uid="uid://cjpnxoo4no08p" path="res://Piskel/antlerwalking6.png" id="4_bde2j"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a3nr4"]
+atlas = ExtResource("2_tbbkv")
+region = Rect2(0, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0dekw"]
+atlas = ExtResource("2_tbbkv")
+region = Rect2(36, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3cfl"]
+atlas = ExtResource("3_xw8jb")
+region = Rect2(0, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oslkj"]
+atlas = ExtResource("3_xw8jb")
+region = Rect2(36, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5r7c4"]
+atlas = ExtResource("4_bde2j")
+region = Rect2(0, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j6v7x"]
+atlas = ExtResource("4_bde2j")
+region = Rect2(36, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kclwq"]
+atlas = ExtResource("4_bde2j")
+region = Rect2(72, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8xhdu"]
+atlas = ExtResource("4_bde2j")
+region = Rect2(108, 0, 36, 36)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nnqt4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a3nr4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0dekw")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 1.33
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3cfl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oslkj")
+}],
+"loop": true,
+"name": &"Sleeping",
+"speed": 0.8
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5r7c4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j6v7x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kclwq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8xhdu")
+}],
+"loop": true,
+"name": &"Walking",
+"speed": 4.0
+}]
+
+[node name="Deer" type="Node2D"]
+script = ExtResource("1_dgdf1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_nnqt4")
+animation = &"Walking"
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = -62.0
+offset_top = -68.0
+offset_right = 45.0
+offset_bottom = 72.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

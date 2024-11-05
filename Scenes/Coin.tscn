@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://h3jilkvc0ftl"]
+
+[ext_resource type="Script" path="res://Scripts/Coin.gd" id="1_3v1i8"]
+[ext_resource type="Texture2D" uid="uid://d0f8oa2488k75" path="res://Piskel/orb.png" id="2_mb7t0"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_hjkvv"]
+bounce = 0.7
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fwdjd"]
+radius = 60.8276
+
+[node name="RigidBody2D" type="RigidBody2D"]
+collision_layer = 2
+physics_material_override = SubResource("PhysicsMaterial_hjkvv")
+script = ExtResource("1_3v1i8")
+
+[node name="Coin" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("2_mb7t0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3.8147e-06, -9.53674e-07)
+scale = Vector2(0.1, 0.1)
+shape = SubResource("CircleShape2D_fwdjd")
+
+[node name="Coin2" type="Node2D" parent="."]
+z_index = 4096
+
+[node name="Timer" type="Timer" parent="Coin2"]
+one_shot = true
+autostart = true
+
+[node name="AddToTotal" type="Timer" parent="Coin2"]
+wait_time = 3.5
+autostart = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Coin2/Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Coin2/AddToTotal" to="." method="_on_add_to_total_timeout"]

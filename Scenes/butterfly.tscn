@@ -1,0 +1,103 @@
+[gd_scene load_steps=15 format=3 uid="uid://c3ut6lyvh5k8p"]
+
+[ext_resource type="Script" path="res://Scripts/butterfly.gd" id="1_mvlnj"]
+[ext_resource type="Texture2D" uid="uid://dr6pm2hjs58c5" path="res://Piskel/ProgressBar/Butterflylowresblue2.png" id="2_ttw28"]
+[ext_resource type="Texture2D" uid="uid://c0cj8mo41u8p0" path="res://Piskel/ProgressBar/goldenbutterflylowres3.png" id="3_xaocv"]
+[ext_resource type="Texture2D" uid="uid://dcsl5n07txg0s" path="res://Piskel/ProgressBar/Butterflylowres2.png" id="4_detb6"]
+[ext_resource type="Texture2D" uid="uid://clgi0lib0jcvm" path="res://Piskel/ProgressBar/Butterflylowrespurple2.png" id="5_f3fkw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xfpes"]
+atlas = ExtResource("2_ttw28")
+region = Rect2(0, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kifd8"]
+atlas = ExtResource("2_ttw28")
+region = Rect2(12, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lqrv5"]
+atlas = ExtResource("3_xaocv")
+region = Rect2(0, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tr280"]
+atlas = ExtResource("3_xaocv")
+region = Rect2(12, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8sf6x"]
+atlas = ExtResource("4_detb6")
+region = Rect2(0, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5nris"]
+atlas = ExtResource("4_detb6")
+region = Rect2(12, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iry73"]
+atlas = ExtResource("5_f3fkw")
+region = Rect2(0, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6emc3"]
+atlas = ExtResource("5_f3fkw")
+region = Rect2(12, 0, 12, 12)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1ni63"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xfpes")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kifd8")
+}],
+"loop": true,
+"name": &"Blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lqrv5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tr280")
+}],
+"loop": true,
+"name": &"Gold",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8sf6x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5nris")
+}],
+"loop": true,
+"name": &"Orange",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iry73")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6emc3")
+}],
+"loop": true,
+"name": &"Purple",
+"speed": 5.0
+}]
+
+[node name="Butterfly" type="Node2D"]
+script = ExtResource("1_mvlnj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1ni63")
+animation = &"Gold"
+autoplay = "Blue"
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = -30.0
+offset_top = -30.0
+offset_right = 30.0
+offset_bottom = 30.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

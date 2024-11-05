@@ -1,0 +1,111 @@
+[gd_scene load_steps=16 format=3 uid="uid://ch56giocjimb3"]
+
+[ext_resource type="Script" path="res://Scripts/Fox.gd" id="1_il0u1"]
+[ext_resource type="Texture2D" uid="uid://b5pkvhgnh7p8u" path="res://Piskel/Sprite-fox-sheet.png" id="2_cykug"]
+[ext_resource type="Texture2D" uid="uid://sl7fodb2060v" path="res://Piskel/foxlaying.png" id="3_o657p"]
+[ext_resource type="Texture2D" uid="uid://cfqx1s2l2wp17" path="res://Piskel/Foxsheet-sheet.png" id="4_idbpf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bbstd"]
+atlas = ExtResource("2_cykug")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ltw54"]
+atlas = ExtResource("2_cykug")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4gvb8"]
+atlas = ExtResource("2_cykug")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7wmup"]
+atlas = ExtResource("2_cykug")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uitnc"]
+atlas = ExtResource("3_o657p")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pwxvf"]
+atlas = ExtResource("3_o657p")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1mplc"]
+atlas = ExtResource("4_idbpf")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ag015"]
+atlas = ExtResource("4_idbpf")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_55bet"]
+atlas = ExtResource("4_idbpf")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ccs2b"]
+atlas = ExtResource("4_idbpf")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f7oap"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bbstd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ltw54")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4gvb8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7wmup")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uitnc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pwxvf")
+}],
+"loop": true,
+"name": &"Sleeping",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1mplc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ag015")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_55bet")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ccs2b")
+}],
+"loop": true,
+"name": &"Walking",
+"speed": 7.0
+}]
+
+[node name="Fox" type="Node2D"]
+scale = Vector2(4, 4)
+script = ExtResource("1_il0u1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_f7oap")
+animation = &"Walking"
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = -11.0
+offset_top = -9.0
+offset_right = 10.0
+offset_bottom = 9.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=3 uid="uid://buu34cfari5g6"]
+
+[ext_resource type="Script" path="res://Scripts/task.gd" id="1_nlf8o"]
+[ext_resource type="Texture2D" uid="uid://debo0jj6aacx4" path="res://Piskel/ProgressBar/image-1.png (1)-3.png-2.png.png" id="2_4gy3w"]
+[ext_resource type="Texture2D" uid="uid://blop0ndvjy2co" path="res://Piskel/image-1.png (1)-3.png-2.png (1).png" id="3_klhm0"]
+[ext_resource type="Texture2D" uid="uid://se6njyhnsgdo" path="res://Piskel/ProgressBar/image-1.png (1)-3.png-1.png (1).png" id="4_kdwjk"]
+[ext_resource type="Texture2D" uid="uid://drote8knh14cn" path="res://Piskel/image-1.png (1)-3.png-1.png (2).png" id="5_uv5bb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7sgvs"]
+bg_color = Color(0.858824, 0.619608, 0.301961, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.54902, 0.364706, 0.152941, 1)
+expand_margin_left = 12.0
+expand_margin_top = 14.0
+expand_margin_right = 100.0
+expand_margin_bottom = 14.0
+shadow_size = 5
+
+[sub_resource type="Theme" id="Theme_p7o5q"]
+Label/styles/normal = SubResource("StyleBoxFlat_7sgvs")
+
+[node name="Task" type="Label"]
+theme = SubResource("Theme_p7o5q")
+theme_override_colors/font_color = Color(0.384314, 0.278431, 0.137255, 1)
+theme_override_font_sizes/font_size = 16
+horizontal_alignment = 1
+autowrap_mode = 3
+script = ExtResource("1_nlf8o")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 589.0
+offset_top = -7.0
+offset_right = 629.0
+offset_bottom = 33.0
+texture_normal = ExtResource("2_4gy3w")
+texture_hover = ExtResource("3_klhm0")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 540.0
+offset_top = -5.0
+offset_right = 577.0
+offset_bottom = 32.0
+scale = Vector2(1.2, 1.2)
+texture_normal = ExtResource("4_kdwjk")
+texture_hover = ExtResource("5_uv5bb")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]

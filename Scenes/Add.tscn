@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://d2ku018jnfl1c"]
+
+[ext_resource type="Texture2D" uid="uid://b87svjimswj2e" path="res://Piskel/New Piskel-1.png (1).png" id="1_bq4xm"]
+[ext_resource type="Texture2D" uid="uid://ctqg015rbprpm" path="res://Piskel/New Piskel-1.png (2).png" id="2_btmcn"]
+[ext_resource type="Texture2D" uid="uid://deaobkjbrueo3" path="res://Piskel/New Piskel-1.png (4).png" id="3_7sklg"]
+[ext_resource type="Texture2D" uid="uid://sv74camnited" path="res://Piskel/buttonplant-1.png.png" id="4_0ukis"]
+[ext_resource type="Texture2D" uid="uid://cxwcmoee15ycv" path="res://Piskel/buttonplant-2.png (1).png" id="5_08e18"]
+
+[node name="Add" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 319.0
+offset_top = 55.0
+offset_right = 839.0
+offset_bottom = 575.0
+texture = ExtResource("1_bq4xm")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_left = 374.0
+offset_top = 105.0
+offset_right = 793.0
+offset_bottom = 524.0
+metadata/_edit_lock_ = true
+
+[node name="AddMenuQuit" type="TextureButton" parent="."]
+offset_left = 738.0
+offset_top = 109.0
+offset_right = 770.0
+offset_bottom = 141.0
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("2_btmcn")
+texture_hover = ExtResource("3_7sklg")
+
+[node name="AddMenuAdd" type="TextureButton" parent="."]
+offset_left = 478.0
+offset_top = 418.0
+offset_right = 550.0
+offset_bottom = 455.0
+scale = Vector2(3, 3)
+texture_normal = ExtResource("4_0ukis")
+texture_hover = ExtResource("5_08e18")

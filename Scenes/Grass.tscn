@@ -1,0 +1,122 @@
+[gd_scene load_steps=6 format=3 uid="uid://dr8jwh4qtjfhq"]
+
+[ext_resource type="Texture2D" uid="uid://hf0hetbm14wx" path="res://Piskel/grass-2.png.png" id="1_sg2nb"]
+[ext_resource type="Texture2D" uid="uid://buiwc788to7kj" path="res://Piskel/grass-3.png.png" id="2_2pr2e"]
+[ext_resource type="Texture2D" uid="uid://diso41sxc2050" path="res://Piskel/grass-4.png.png" id="3_2u24g"]
+[ext_resource type="Texture2D" uid="uid://d2ml6a2ndu6vj" path="res://Piskel/grass-5.png (2).png" id="4_nns5g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yf252"]
+size = Vector2(12443, 100)
+
+[node name="Grass" type="ParallaxBackground"]
+layer = 100
+follow_viewport_enabled = true
+scroll_ignore_camera_zoom = true
+
+[node name="Grass1" type="ParallaxLayer" parent="."]
+texture_repeat = 2
+position = Vector2(0, -26)
+motion_mirroring = Vector2(1280, 0)
+
+[node name="Grass-2_png" type="Sprite2D" parent="Grass1"]
+position = Vector2(128, 520)
+texture = ExtResource("1_sg2nb")
+
+[node name="Grass-2_png2" type="Sprite2D" parent="Grass1"]
+position = Vector2(384, 520)
+texture = ExtResource("1_sg2nb")
+
+[node name="Grass-2_png3" type="Sprite2D" parent="Grass1"]
+position = Vector2(640, 520)
+texture = ExtResource("1_sg2nb")
+
+[node name="Grass-2_png4" type="Sprite2D" parent="Grass1"]
+position = Vector2(896, 520)
+texture = ExtResource("1_sg2nb")
+
+[node name="Grass-2_png5" type="Sprite2D" parent="Grass1"]
+position = Vector2(1152, 520)
+texture = ExtResource("1_sg2nb")
+
+[node name="Grass2" type="ParallaxLayer" parent="."]
+texture_repeat = 2
+position = Vector2(0, -25)
+motion_mirroring = Vector2(1280, 0)
+
+[node name="Grass-3_png" type="Sprite2D" parent="Grass2"]
+position = Vector2(128, 520)
+texture = ExtResource("2_2pr2e")
+
+[node name="Grass-3_png2" type="Sprite2D" parent="Grass2"]
+position = Vector2(384, 520)
+texture = ExtResource("2_2pr2e")
+
+[node name="Grass-3_png3" type="Sprite2D" parent="Grass2"]
+position = Vector2(640, 520)
+texture = ExtResource("2_2pr2e")
+
+[node name="Grass-3_png4" type="Sprite2D" parent="Grass2"]
+position = Vector2(896, 520)
+texture = ExtResource("2_2pr2e")
+
+[node name="Grass-3_png5" type="Sprite2D" parent="Grass2"]
+position = Vector2(1152, 520)
+texture = ExtResource("2_2pr2e")
+
+[node name="Grass3" type="ParallaxLayer" parent="."]
+texture_repeat = 2
+position = Vector2(0, -24)
+motion_mirroring = Vector2(1280, 0)
+
+[node name="Grass-4_png" type="Sprite2D" parent="Grass3"]
+position = Vector2(128, 520)
+texture = ExtResource("3_2u24g")
+
+[node name="Grass-4_png2" type="Sprite2D" parent="Grass3"]
+position = Vector2(384, 520)
+texture = ExtResource("3_2u24g")
+
+[node name="Grass-4_png3" type="Sprite2D" parent="Grass3"]
+position = Vector2(640, 520)
+texture = ExtResource("3_2u24g")
+
+[node name="Grass-4_png4" type="Sprite2D" parent="Grass3"]
+position = Vector2(896, 520)
+texture = ExtResource("3_2u24g")
+
+[node name="Grass-4_png5" type="Sprite2D" parent="Grass3"]
+position = Vector2(1152, 520)
+texture = ExtResource("3_2u24g")
+
+[node name="Grass4" type="ParallaxLayer" parent="."]
+texture_repeat = 2
+position = Vector2(0, 50)
+motion_mirroring = Vector2(1280, 0)
+
+[node name="Grass-5_png" type="Sprite2D" parent="Grass4"]
+position = Vector2(128, 520)
+texture = ExtResource("4_nns5g")
+
+[node name="Grass-5_png2" type="Sprite2D" parent="Grass4"]
+position = Vector2(384, 520)
+texture = ExtResource("4_nns5g")
+
+[node name="Grass-5_png3" type="Sprite2D" parent="Grass4"]
+position = Vector2(640, 520)
+texture = ExtResource("4_nns5g")
+
+[node name="Grass-5_png4" type="Sprite2D" parent="Grass4"]
+position = Vector2(896, 520)
+texture = ExtResource("4_nns5g")
+
+[node name="Grass-5_png5" type="Sprite2D" parent="Grass4"]
+position = Vector2(1152, 520)
+texture = ExtResource("4_nns5g")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(629, 1009)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(4368.5, -395)
+shape = SubResource("RectangleShape2D_yf252")
+one_way_collision = true

@@ -1,0 +1,1698 @@
+[gd_scene load_steps=101 format=3 uid="uid://d3qjhynn3qsft"]
+
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_vupxb"]
+[ext_resource type="PackedScene" uid="uid://pw0cuiu0wfus" path="res://Scenes/sunrisebackg.tscn" id="2_be6a5"]
+[ext_resource type="Texture2D" uid="uid://dxk6x6a6okprb" path="res://ButtonsPiskel/Cart-4.png.png" id="2_e5wov"]
+[ext_resource type="PackedScene" uid="uid://dic6qef4g4mkv" path="res://Scenes/Background.tscn" id="2_p340e"]
+[ext_resource type="PackedScene" uid="uid://deuipt7wr5jse" path="res://Scenes/eveningbackg.tscn" id="2_qqtuj"]
+[ext_resource type="PackedScene" uid="uid://crg4kdrl1jer" path="res://Scenes/nightbackg.tscn" id="2_rxpyp"]
+[ext_resource type="Texture2D" uid="uid://bvp3fb37p7qdi" path="res://ButtonsPiskel/Cart-4.png-1.png.png" id="3_804bs"]
+[ext_resource type="Script" path="res://Scripts/UI.gd" id="3_j2064"]
+[ext_resource type="PackedScene" uid="uid://dr8jwh4qtjfhq" path="res://Scenes/Grass.tscn" id="4_cb7au"]
+[ext_resource type="Texture2D" uid="uid://b5a8gxjrdyrbn" path="res://ButtonsPiskel/Cart-1.png-1.png.png" id="4_vlftn"]
+[ext_resource type="Texture2D" uid="uid://ctqg015rbprpm" path="res://Piskel/New Piskel-1.png (2).png" id="5_773ls"]
+[ext_resource type="Texture2D" uid="uid://31mp8vq41h8y" path="res://ButtonsPiskel/Cart-3.png.png" id="5_dotr0"]
+[ext_resource type="Texture2D" uid="uid://ciy6j3xq7p2mi" path="res://ButtonsPiskel/Cart-1.png-2.png-1.png.png" id="6_44ast"]
+[ext_resource type="Texture2D" uid="uid://deaobkjbrueo3" path="res://Piskel/New Piskel-1.png (4).png" id="6_cvhig"]
+[ext_resource type="Texture2D" uid="uid://cr7hfjccnhr01" path="res://Piskel/image-1.png.png" id="7_i5vr7"]
+[ext_resource type="Texture2D" uid="uid://bxwe4p5xtkx2g" path="res://ButtonsPiskel/Cart-1.png-2.png.png" id="7_nks34"]
+[ext_resource type="Texture2D" uid="uid://duqf033ne26bm" path="res://ButtonsPiskel/Cart-1.png.png" id="8_bl1dk"]
+[ext_resource type="Texture2D" uid="uid://ckwv3oxd4cbew" path="res://Piskel/image-1.png (1)-1.png (1).png" id="8_im58t"]
+[ext_resource type="Texture2D" uid="uid://bgmcga1lywxlt" path="res://Piskel/New Piskel-1.png (6).png" id="8_tbodb"]
+[ext_resource type="Texture2D" uid="uid://kt2masi0umr5" path="res://ButtonsPiskel/Cart-1.png-1.png (1).png" id="9_u34bj"]
+[ext_resource type="Texture2D" uid="uid://dgeh2yfjarr6h" path="res://ButtonsPiskel/Cart-1.png-3.png.png" id="10_3nvum"]
+[ext_resource type="Texture2D" uid="uid://t5o3d7h3c2u4" path="res://Piskel/orbspecial.png" id="11_7puev"]
+[ext_resource type="Texture2D" uid="uid://cvgd4id0jveyd" path="res://ButtonsPiskel/Cart-2.png.png" id="11_xn86v"]
+[ext_resource type="Texture2D" uid="uid://dnvoia2hmwqw5" path="res://ButtonsPiskel/Cart-1.png-2.png (2).png" id="12_58ehx"]
+[ext_resource type="Texture2D" uid="uid://ccctk5k6c8nlj" path="res://ButtonsPiskel/Cart-1.png-2.png (1).png" id="13_2btl8"]
+[ext_resource type="Script" path="res://Scripts/PlantGrid.gd" id="21_hv1ul"]
+[ext_resource type="Script" path="res://Scripts/Camera2D.gd" id="23_oo4lq"]
+[ext_resource type="Texture2D" uid="uid://6msvabxfqi5f" path="res://Piskel/_9d03b8a6-439a-4ae1-b5fa-be9524fd9bab (2)-1.png.png" id="24_hay47"]
+[ext_resource type="Texture2D" uid="uid://djcgmgv24gai2" path="res://Piskel/_9d03b8a6-439a-4ae1-b5fa-be9524fd9bab (2)-2.png.png" id="25_cxa73"]
+[ext_resource type="Texture2D" uid="uid://jgmikqo4inma" path="res://Piskel/image-1.png (1)-1.png (7).png" id="28_1pbs2"]
+[ext_resource type="PackedScene" uid="uid://c8efbjo00nxka" path="res://Scenes/bro.tscn" id="29_4wx2j"]
+[ext_resource type="Texture2D" uid="uid://ch6g3fse02qjf" path="res://Piskel/ProgressBar/signplates-3.png.png" id="29_ah5nq"]
+[ext_resource type="Texture2D" uid="uid://8484uejy4x47" path="res://Piskel/ProgressBar/signplates-4.png.png" id="31_v2kt3"]
+[ext_resource type="Texture2D" uid="uid://c10501ax68rco" path="res://Piskel/taskbuttons/decorationtab.png" id="31_v3qe1"]
+[ext_resource type="Script" path="res://Scripts/BushShop.gd" id="33_0nrjx"]
+[ext_resource type="Texture2D" uid="uid://bf7xwnopshs8c" path="res://Piskel/taskbuttons/animaltab.png" id="33_s8pd8"]
+[ext_resource type="Texture2D" uid="uid://d0f8oa2488k75" path="res://Piskel/orb.png" id="35_iqd4m"]
+[ext_resource type="Script" path="res://Scripts/FoxShop.gd" id="35_is7lj"]
+[ext_resource type="Script" path="res://Scripts/GrassShop.gd" id="36_bybuq"]
+[ext_resource type="Texture2D" uid="uid://34nnd4tl03ku" path="res://Piskel/ProgressBar/grass2.png" id="36_f7pw4"]
+[ext_resource type="Texture2D" uid="uid://hgfef87uysbf" path="res://Piskel/animaltab-1.png.png" id="36_oq8y3"]
+[ext_resource type="Texture2D" uid="uid://bb2kv3ej5fpiy" path="res://Misc/Sprite-fox.png" id="36_ylwvf"]
+[ext_resource type="Script" path="res://Scripts/TextureButton.gd" id="37_5dknv"]
+[ext_resource type="Texture2D" uid="uid://bkb6qdcmvsqe7" path="res://Piskel/ProgressBar/animaltab-1.png-2.png (1).png" id="37_iwuq5"]
+[ext_resource type="Texture2D" uid="uid://cmic4ha7le0hk" path="res://Piskel/ProgressBar/bush2.png" id="39_gatoe"]
+[ext_resource type="Script" path="res://Scripts/SunflowerShop.gd" id="40_j1u05"]
+[ext_resource type="Script" path="res://Scripts/Butterflyshop.gd" id="41_chfbv"]
+[ext_resource type="Texture2D" uid="uid://p6uwcukbnqq2" path="res://Piskel/sunflower3.png" id="41_hr5kk"]
+[ext_resource type="Texture2D" uid="uid://d2b5qw0ifedq6" path="res://Piskel/ProgressBar/bluelogo1.png" id="42_0mxv0"]
+[ext_resource type="Script" path="res://Scripts/VarenShop.gd" id="42_qva53"]
+[ext_resource type="Texture2D" uid="uid://dkdjbelnbsnvg" path="res://Piskel/varen.png" id="43_24wou"]
+[ext_resource type="Texture2D" uid="uid://huty0hf8a7u1" path="res://Piskel/bigboard.png" id="43_x3v7x"]
+[ext_resource type="Script" path="res://Scripts/FlowerbedShop.gd" id="44_0n2gq"]
+[ext_resource type="Texture2D" uid="uid://dkxqlpeoa8s0d" path="res://Piskel/top2.png" id="44_4a8wi"]
+[ext_resource type="Texture2D" uid="uid://biy7erv83vbgc" path="res://Piskel/flowerbed.png" id="45_243ym"]
+[ext_resource type="Texture2D" uid="uid://bp0e0v5g4dc8k" path="res://Piskel/taskbuttons/taskmenudaily.png" id="47_mqgye"]
+[ext_resource type="Texture2D" uid="uid://bg6u1itfoxgbh" path="res://Piskel/taskbuttons/taskmenudailypressed.png" id="48_8q88x"]
+[ext_resource type="Texture2D" uid="uid://dhm5wwmhm4rrr" path="res://Piskel/taskbuttons/taskmenudailyhover.png" id="49_gpaww"]
+[ext_resource type="Texture2D" uid="uid://c04ry04lu0qsy" path="res://Piskel/taskbuttons/taskmenuweekly.png" id="50_8v6ct"]
+[ext_resource type="Texture2D" uid="uid://y1iucqvhssei" path="res://Piskel/taskbuttons/taskmenuweeklypressed.png" id="51_86nby"]
+[ext_resource type="Texture2D" uid="uid://blu6yqj8ag8rf" path="res://Piskel/taskbuttons/taskmenuweeklyhover.png" id="52_qkjc4"]
+[ext_resource type="Script" path="res://Scripts/DeerShop.gd" id="52_tgff3"]
+[ext_resource type="Texture2D" uid="uid://bq3frcxd25bfy" path="res://Piskel/taskbuttons/taskmenuyearly.png" id="53_8xgxu"]
+[ext_resource type="Texture2D" uid="uid://dj5f8ft45gpxh" path="res://Piskel/taskbuttons/Shopheader.png" id="53_ax42k"]
+[ext_resource type="Texture2D" uid="uid://bw3p70806ctpy" path="res://Piskel/antler3.png" id="53_pbl8q"]
+[ext_resource type="Script" path="res://Scripts/GoldenFoxShop.gd" id="54_15p2c"]
+[ext_resource type="Texture2D" uid="uid://dwak8ajifvqnn" path="res://Piskel/taskbuttons/taskmenuyearlypressed.png" id="54_psfpe"]
+[ext_resource type="Texture2D" uid="uid://cjrnvtp3npbeg" path="res://Piskel/taskbuttons/taskmenuyearlyhover.png" id="55_4k2ey"]
+[ext_resource type="Script" path="res://Scripts/CrazyFlowerShop.gd" id="55_i6ep3"]
+[ext_resource type="Texture2D" uid="uid://cx28rvus3pusk" path="res://Piskel/taskbuttons/taskmenuquit.png" id="56_evvhc"]
+[ext_resource type="Texture2D" uid="uid://c8ol662modb88" path="res://Piskel/ProgressBar/goldenfox.png" id="57_jikxj"]
+[ext_resource type="Texture2D" uid="uid://cihtpnhalkqx2" path="res://Piskel/taskbuttons/taskmenuquithover.png" id="57_xlaxv"]
+[ext_resource type="Texture2D" uid="uid://dmwpb3xhcgw1d" path="res://Piskel/ProgressBar/goldenflower.png" id="59_0osw0"]
+[ext_resource type="Texture2D" uid="uid://d1wxsivkec2po" path="res://Piskel/ProgressBar/settingsheader.png" id="64_khh45"]
+[ext_resource type="Texture2D" uid="uid://cc2bn4x74d16a" path="res://Piskel/slider1.png" id="65_u82mb"]
+[ext_resource type="Texture2D" uid="uid://3ji8f0ivmyl0" path="res://Piskel/Strandarddd.png" id="66_ujlte"]
+
+[sub_resource type="Theme" id="Theme_mpbpw"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7o7ab"]
+texture = ExtResource("8_tbodb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3olte"]
+texture = ExtResource("8_tbodb")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rq338"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p6lb0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ad1pi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pqoro"]
+size = Vector2(285, 157)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yxng3"]
+bg_color = Color(0.576471, 0.427451, 0.231373, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.384314, 0.278431, 0.137255, 1)
+shadow_size = 5
+
+[sub_resource type="Theme" id="Theme_n4eeu"]
+Panel/styles/panel = SubResource("StyleBoxFlat_yxng3")
+
+[sub_resource type="GDScript" id="GDScript_y27r0"]
+script/source = "extends HBoxContainer
+func _ready():
+	#$VBoxContainer/HBoxContainer/TextureRect.position.x -= 60
+	pass
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xhjmc"]
+size = Vector2(860, 649)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yjow8"]
+bg_color = Color(0.576471, 0.427451, 0.231373, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.384314, 0.278431, 0.137255, 1)
+expand_margin_left = 12.0
+expand_margin_top = 12.0
+expand_margin_right = 100.0
+expand_margin_bottom = 12.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_51d2x"]
+bg_color = Color(0.576471, 0.427451, 0.231373, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.384314, 0.278431, 0.137255, 1)
+expand_margin_left = 12.0
+expand_margin_top = 12.0
+expand_margin_right = 100.0
+expand_margin_bottom = 12.0
+shadow_size = 5
+
+[sub_resource type="Theme" id="Theme_8rlc0"]
+LineEdit/styles/focus = SubResource("StyleBoxFlat_yjow8")
+LineEdit/styles/normal = SubResource("StyleBoxFlat_51d2x")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3dygf"]
+bg_color = Color(0.47451, 0.34902, 0.180392, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.384314, 0.278431, 0.137255, 1)
+expand_margin_left = 8.0
+expand_margin_right = 8.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0krcd"]
+bg_color = Color(0.839216, 0.658824, 0.431373, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.384314, 0.278431, 0.137255, 1)
+expand_margin_left = 8.0
+expand_margin_right = 8.0
+
+[sub_resource type="Theme" id="Theme_etdo0"]
+Button/styles/focus = SubResource("StyleBoxFlat_3dygf")
+Button/styles/hover = SubResource("StyleBoxFlat_0krcd")
+Button/styles/normal = SubResource("StyleBoxFlat_3dygf")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kcwdp"]
+bg_color = Color(0.839216, 0.658824, 0.431373, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+expand_margin_left = 8.0
+expand_margin_top = 4.0
+expand_margin_right = 8.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cl14u"]
+bg_color = Color(0.47451, 0.34902, 0.180392, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+expand_margin_left = 8.0
+expand_margin_top = 4.0
+expand_margin_right = 8.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="Theme" id="Theme_7nank"]
+Button/styles/disabled = SubResource("StyleBoxFlat_kcwdp")
+Button/styles/focus = SubResource("StyleBoxFlat_cl14u")
+Button/styles/hover = SubResource("StyleBoxFlat_kcwdp")
+Button/styles/normal = SubResource("StyleBoxFlat_cl14u")
+Button/styles/pressed = SubResource("StyleBoxFlat_kcwdp")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2p848"]
+bg_color = Color(0.8, 0.576471, 0.278431, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.384314, 0.278431, 0.137255, 1)
+expand_margin_top = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tm67m"]
+bg_color = Color(0.568627, 0.407843, 0.2, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.384314, 0.278431, 0.137255, 1)
+expand_margin_top = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xww5s"]
+bg_color = Color(0.8, 0.576471, 0.278431, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.384314, 0.278431, 0.137255, 1)
+expand_margin_top = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_04r1h"]
+bg_color = Color(0.568627, 0.407843, 0.2, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.384314, 0.278431, 0.137255, 1)
+expand_margin_top = 10.0
+expand_margin_bottom = 10.0
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_vupxb")
+
+[node name="Bro" parent="." instance=ExtResource("29_4wx2j")]
+z_index = 110
+position = Vector2(252, 484)
+scale = Vector2(5, 5)
+
+[node name="nightbackg" parent="." instance=ExtResource("2_rxpyp")]
+visible = false
+
+[node name="eveningbackg" parent="." instance=ExtResource("2_qqtuj")]
+visible = false
+
+[node name="sunrisebackg" parent="." instance=ExtResource("2_be6a5")]
+visible = false
+
+[node name="daybackg" parent="." instance=ExtResource("2_p340e")]
+visible = false
+
+[node name="PlantGrid" type="Node2D" parent="."]
+script = ExtResource("21_hv1ul")
+
+[node name="DecorationGrid" type="Node2D" parent="PlantGrid"]
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PlantGrid"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PlantGrid"]
+offset_left = 226.0
+offset_top = 505.0
+offset_right = 1235.0
+offset_bottom = 653.0
+mouse_filter = 2
+
+[node name="Grass" parent="." instance=ExtResource("4_cb7au")]
+follow_viewport_enabled = false
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+limit_left = 0
+script = ExtResource("23_oo4lq")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -546.0
+offset_top = 10.0
+offset_right = -11.0
+offset_bottom = 120.0
+grow_horizontal = 0
+theme_override_constants/separation = -5
+alignment = 2
+
+[node name="Coincount" type="Label" parent="UI/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.968627, 0.952941, 0.717647, 1)
+theme_override_colors/font_outline_color = Color(0.937255, 0.870588, 0.447059, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 35
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="Coinimage" type="TextureRect" parent="UI/HBoxContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+texture = ExtResource("35_iqd4m")
+expand_mode = 2
+
+[node name="Control2" type="Control" parent="UI/HBoxContainer"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+
+[node name="SpecialCoinCount" type="Label" parent="UI/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85098, 0.580392, 1, 1)
+theme_override_colors/font_outline_color = Color(0.764706, 0.337255, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 35
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/HBoxContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+texture = ExtResource("11_7puev")
+expand_mode = 2
+
+[node name="Control" type="Control" parent="UI/HBoxContainer"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+
+[node name="QuitButton" type="TextureButton" parent="UI/HBoxContainer"]
+custom_minimum_size = Vector2(90, 90)
+layout_mode = 2
+texture_normal = ExtResource("24_hay47")
+texture_pressed = ExtResource("25_cxa73")
+texture_hover = ExtResource("25_cxa73")
+stretch_mode = 5
+
+[node name="UInode" type="Node2D" parent="UI"]
+script = ExtResource("3_j2064")
+
+[node name="AddMenu" type="TextureRect" parent="UI/UInode"]
+offset_left = 311.0
+offset_top = 95.0
+offset_right = 798.0
+offset_bottom = 582.0
+theme = SubResource("Theme_mpbpw")
+texture = ExtResource("7_i5vr7")
+
+[node name="GridContainer" type="GridContainer" parent="UI/UInode/AddMenu"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -133.5
+offset_right = 150.0
+offset_bottom = -18.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DescriptionEdit" type="TextEdit" parent="UI/UInode/AddMenu/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/background_color = Color(0.384314, 0.278431, 0.137255, 0.482353)
+theme_override_font_sizes/font_size = 22
+placeholder_text = "Description"
+wrap_mode = 1
+
+[node name="FrequencySlider" type="HSlider" parent="UI/UInode/AddMenu/GridContainer"]
+layout_mode = 2
+theme_override_icons/grabber = ExtResource("8_im58t")
+theme_override_icons/tick = ExtResource("8_tbodb")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_7o7ab")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_3olte")
+max_value = 4.0
+
+[node name="Frequency" type="LineEdit" parent="UI/UInode/AddMenu/GridContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.384314, 0.278431, 0.137255, 1)
+theme_override_colors/font_selected_color = Color(0.384314, 0.278431, 0.137255, 1)
+theme_override_colors/font_uneditable_color = Color(0.382813, 0.277344, 0.136719, 1)
+alignment = 1
+editable = false
+
+[node name="AddMenuQuit" type="TextureButton" parent="UI/UInode/AddMenu"]
+layout_mode = 0
+offset_left = 354.0
+offset_top = 237.0
+offset_right = 386.0
+offset_bottom = 269.0
+texture_normal = ExtResource("5_773ls")
+texture_hover = ExtResource("6_cvhig")
+
+[node name="AddMenuAdd" type="Button" parent="UI/UInode/AddMenu"]
+layout_mode = 0
+offset_left = 93.0
+offset_top = 235.0
+offset_right = 181.0
+offset_bottom = 270.0
+text = "PLANT"
+
+[node name="AddButton" type="TextureButton" parent="UI/UInode"]
+material = SubResource("ShaderMaterial_rq338")
+offset_left = 18.0
+offset_top = 40.0
+offset_right = 43.0
+offset_bottom = 65.0
+scale = Vector2(4, 4)
+texture_normal = ExtResource("2_e5wov")
+texture_pressed = ExtResource("3_804bs")
+texture_hover = ExtResource("4_vlftn")
+
+[node name="TaskButton" type="TextureButton" parent="UI/UInode"]
+material = SubResource("ShaderMaterial_p6lb0")
+offset_left = 18.0
+offset_top = 170.0
+offset_right = 43.0
+offset_bottom = 195.0
+scale = Vector2(4, 4)
+texture_normal = ExtResource("5_dotr0")
+texture_pressed = ExtResource("6_44ast")
+texture_hover = ExtResource("7_nks34")
+
+[node name="ShopButton" type="TextureButton" parent="UI/UInode"]
+material = SubResource("ShaderMaterial_ad1pi")
+offset_left = 18.0
+offset_top = 300.0
+offset_right = 43.0
+offset_bottom = 325.0
+scale = Vector2(4, 4)
+texture_normal = ExtResource("8_bl1dk")
+texture_pressed = ExtResource("9_u34bj")
+texture_hover = ExtResource("10_3nvum")
+
+[node name="SettingsButton" type="TextureButton" parent="UI/UInode"]
+offset_left = 18.0
+offset_top = 430.0
+offset_right = 43.0
+offset_bottom = 455.0
+scale = Vector2(4, 4)
+texture_normal = ExtResource("11_xn86v")
+texture_pressed = ExtResource("12_58ehx")
+texture_hover = ExtResource("13_2btl8")
+
+[node name="ShopMenuCanvas" type="CanvasLayer" parent="UI/UInode"]
+layer = 4
+visible = false
+
+[node name="ShopButtons" type="VBoxContainer" parent="UI/UInode/ShopMenuCanvas"]
+offset_left = 357.0
+offset_top = 113.0
+offset_right = 659.0
+offset_bottom = 837.0
+scale = Vector2(0.5, 0.5)
+
+[node name="DecorationButton" type="TextureButton" parent="UI/UInode/ShopMenuCanvas/ShopButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("31_v3qe1")
+texture_hover = ExtResource("29_ah5nq")
+stretch_mode = 4
+
+[node name="Control" type="Control" parent="UI/UInode/ShopMenuCanvas/ShopButtons"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="AnimalButton" type="TextureButton" parent="UI/UInode/ShopMenuCanvas/ShopButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("33_s8pd8")
+texture_hover = ExtResource("31_v2kt3")
+stretch_mode = 4
+
+[node name="Control2" type="Control" parent="UI/UInode/ShopMenuCanvas/ShopButtons"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="SpecialButton" type="TextureButton" parent="UI/UInode/ShopMenuCanvas/ShopButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("36_oq8y3")
+texture_hover = ExtResource("37_iwuq5")
+stretch_mode = 4
+
+[node name="DecorationScroll" type="ScrollContainer" parent="UI/UInode/ShopMenuCanvas"]
+clip_contents = false
+offset_right = 400.0
+offset_bottom = 569.0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="VScrollBar" type="VBoxContainer" parent="UI/UInode/ShopMenuCanvas/DecorationScroll"]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+
+[node name="ShopMenu" type="TextureRect" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar"]
+texture_repeat = 2
+custom_minimum_size = Vector2(0, 3000)
+layout_mode = 2
+texture = ExtResource("28_1pbs2")
+stretch_mode = 1
+
+[node name="GridContainer" type="VBoxContainer" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu"]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 36.0
+offset_right = 356.0
+offset_bottom = 189.0
+
+[node name="GrassShop" type="Area2D" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer"]
+position = Vector2(5, 272)
+script = ExtResource("36_bybuq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/GrassShop"]
+position = Vector2(127.5, 79.5)
+shape = SubResource("RectangleShape2D_pqoro")
+
+[node name="Control" type="Panel" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/GrassShop"]
+custom_minimum_size = Vector2(0, 160)
+offset_left = -15.0
+offset_right = 271.0
+offset_bottom = 160.0
+size_flags_vertical = 3
+theme = SubResource("Theme_n4eeu")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/GrassShop/Control"]
+layout_mode = 2
+offset_top = 4.0
+offset_right = 290.0
+offset_bottom = 148.0
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/GrassShop/Control/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("36_f7pw4")
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/GrassShop/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/GrassShop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture = ExtResource("35_iqd4m")
+expand_mode = 4
+
+[node name="FoxPrice" type="Label" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/GrassShop/Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.968627, 0.952941, 0.717647, 1)
+theme_override_colors/font_outline_color = Color(0.937255, 0.870588, 0.447059, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 22
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Control" type="Control" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/GrassShop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="BushShop" type="Area2D" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer"]
+position = Vector2(5, 78)
+script = ExtResource("33_0nrjx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/BushShop"]
+position = Vector2(127.5, 79.5)
+shape = SubResource("RectangleShape2D_pqoro")
+
+[node name="Control" type="Panel" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/BushShop"]
+custom_minimum_size = Vector2(0, 160)
+offset_left = -15.0
+offset_right = 271.0
+offset_bottom = 160.0
+size_flags_vertical = 3
+theme = SubResource("Theme_n4eeu")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/BushShop/Control"]
+layout_mode = 2
+offset_top = 4.0
+offset_right = 290.0
+offset_bottom = 148.0
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/BushShop/Control/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("39_gatoe")
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/BushShop/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/BushShop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture = ExtResource("35_iqd4m")
+expand_mode = 4
+
+[node name="FoxPrice" type="Label" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/BushShop/Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.968627, 0.952941, 0.717647, 1)
+theme_override_colors/font_outline_color = Color(0.937255, 0.870588, 0.447059, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 22
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Control" type="Control" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/BushShop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="SunflowerShop" type="Area2D" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer"]
+position = Vector2(5, 466)
+script = ExtResource("40_j1u05")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/SunflowerShop"]
+position = Vector2(127.5, 79.5)
+shape = SubResource("RectangleShape2D_pqoro")
+
+[node name="Control" type="Panel" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/SunflowerShop"]
+custom_minimum_size = Vector2(0, 160)
+offset_left = -15.0
+offset_right = 271.0
+offset_bottom = 160.0
+size_flags_vertical = 3
+theme = SubResource("Theme_n4eeu")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/SunflowerShop/Control"]
+layout_mode = 2
+offset_top = 4.0
+offset_right = 290.0
+offset_bottom = 148.0
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/SunflowerShop/Control/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("41_hr5kk")
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/SunflowerShop/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/SunflowerShop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture = ExtResource("35_iqd4m")
+expand_mode = 4
+
+[node name="FoxPrice" type="Label" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/SunflowerShop/Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.968627, 0.952941, 0.717647, 1)
+theme_override_colors/font_outline_color = Color(0.937255, 0.870588, 0.447059, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 22
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Control" type="Control" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/SunflowerShop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="VarenShop" type="Area2D" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer"]
+position = Vector2(5, 660)
+script = ExtResource("42_qva53")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/VarenShop"]
+position = Vector2(127.5, 79.5)
+shape = SubResource("RectangleShape2D_pqoro")
+
+[node name="Control" type="Panel" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/VarenShop"]
+custom_minimum_size = Vector2(0, 160)
+offset_left = -15.0
+offset_right = 271.0
+offset_bottom = 160.0
+size_flags_vertical = 3
+theme = SubResource("Theme_n4eeu")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/VarenShop/Control"]
+layout_mode = 2
+offset_top = 4.0
+offset_right = 290.0
+offset_bottom = 148.0
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/VarenShop/Control/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("43_24wou")
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/VarenShop/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/VarenShop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture = ExtResource("35_iqd4m")
+expand_mode = 4
+
+[node name="FoxPrice" type="Label" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/VarenShop/Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.968627, 0.952941, 0.717647, 1)
+theme_override_colors/font_outline_color = Color(0.937255, 0.870588, 0.447059, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 22
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Control" type="Control" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/VarenShop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="FlowerbedShop" type="Area2D" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer"]
+position = Vector2(5, 854)
+script = ExtResource("44_0n2gq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/FlowerbedShop"]
+position = Vector2(127.5, 79.5)
+shape = SubResource("RectangleShape2D_pqoro")
+
+[node name="Control" type="Panel" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/FlowerbedShop"]
+custom_minimum_size = Vector2(0, 160)
+offset_left = -15.0
+offset_right = 271.0
+offset_bottom = 160.0
+size_flags_vertical = 3
+theme = SubResource("Theme_n4eeu")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/FlowerbedShop/Control"]
+layout_mode = 2
+offset_top = 4.0
+offset_right = 290.0
+offset_bottom = 148.0
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/FlowerbedShop/Control/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("45_243ym")
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/FlowerbedShop/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/FlowerbedShop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture = ExtResource("35_iqd4m")
+expand_mode = 4
+
+[node name="FoxPrice" type="Label" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/FlowerbedShop/Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.968627, 0.952941, 0.717647, 1)
+theme_override_colors/font_outline_color = Color(0.937255, 0.870588, 0.447059, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 22
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Control" type="Control" parent="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/FlowerbedShop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="AnimalScroll" type="ScrollContainer" parent="UI/UInode/ShopMenuCanvas"]
+clip_contents = false
+offset_right = 408.0
+offset_bottom = 569.0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="VScrollBar" type="VBoxContainer" parent="UI/UInode/ShopMenuCanvas/AnimalScroll"]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+
+[node name="ShopMenu" type="TextureRect" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar"]
+texture_repeat = 2
+custom_minimum_size = Vector2(0, 3000)
+layout_mode = 2
+texture = ExtResource("28_1pbs2")
+stretch_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu"]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 26.0
+offset_right = 369.0
+offset_bottom = 500.0
+
+[node name="FoxShop" type="Area2D" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer"]
+position = Vector2(0, 88)
+script = ExtResource("35_is7lj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/FoxShop"]
+position = Vector2(127.5, 79.5)
+shape = SubResource("RectangleShape2D_pqoro")
+
+[node name="Control" type="Panel" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/FoxShop"]
+custom_minimum_size = Vector2(0, 160)
+offset_left = -15.0
+offset_right = 271.0
+offset_bottom = 160.0
+size_flags_vertical = 3
+theme = SubResource("Theme_n4eeu")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/FoxShop/Control"]
+layout_mode = 2
+offset_top = 4.0
+offset_right = 290.0
+offset_bottom = 148.0
+size_flags_vertical = 3
+script = SubResource("GDScript_y27r0")
+
+[node name="TextureButton" type="TextureButton" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/FoxShop/Control/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("36_ylwvf")
+stretch_mode = 6
+script = ExtResource("37_5dknv")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/FoxShop/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/FoxShop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture = ExtResource("35_iqd4m")
+expand_mode = 4
+
+[node name="FoxPrice" type="Label" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/FoxShop/Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.968627, 0.952941, 0.717647, 1)
+theme_override_colors/font_outline_color = Color(0.937255, 0.870588, 0.447059, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 22
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Control" type="Control" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/FoxShop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Butterflyshop" type="Area2D" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer"]
+position = Vector2(0, 282)
+script = ExtResource("41_chfbv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/Butterflyshop"]
+position = Vector2(127.5, 79.5)
+shape = SubResource("RectangleShape2D_pqoro")
+
+[node name="Control" type="Panel" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/Butterflyshop"]
+custom_minimum_size = Vector2(0, 160)
+offset_left = -15.0
+offset_right = 271.0
+offset_bottom = 160.0
+size_flags_vertical = 3
+theme = SubResource("Theme_n4eeu")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/Butterflyshop/Control"]
+layout_mode = 2
+offset_top = 4.0
+offset_right = 290.0
+offset_bottom = 148.0
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/Butterflyshop/Control/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("42_0mxv0")
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/Butterflyshop/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/Butterflyshop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture = ExtResource("35_iqd4m")
+expand_mode = 4
+
+[node name="FoxPrice" type="Label" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/Butterflyshop/Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.968627, 0.952941, 0.717647, 1)
+theme_override_colors/font_outline_color = Color(0.937255, 0.870588, 0.447059, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 22
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Control" type="Control" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/Butterflyshop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="DeerShop" type="Area2D" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer"]
+position = Vector2(0, 477)
+script = ExtResource("52_tgff3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/DeerShop"]
+position = Vector2(127.5, 79.5)
+shape = SubResource("RectangleShape2D_pqoro")
+
+[node name="Control" type="Panel" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/DeerShop"]
+custom_minimum_size = Vector2(0, 160)
+offset_left = -15.0
+offset_right = 271.0
+offset_bottom = 160.0
+size_flags_vertical = 3
+theme = SubResource("Theme_n4eeu")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/DeerShop/Control"]
+layout_mode = 2
+offset_top = 4.0
+offset_right = 290.0
+offset_bottom = 148.0
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/DeerShop/Control/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("53_pbl8q")
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/DeerShop/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/DeerShop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture = ExtResource("35_iqd4m")
+expand_mode = 4
+
+[node name="DeerPrice" type="Label" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/DeerShop/Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.968627, 0.952941, 0.717647, 1)
+theme_override_colors/font_outline_color = Color(0.937255, 0.870588, 0.447059, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 22
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Control" type="Control" parent="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/DeerShop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="SpecialScroll" type="ScrollContainer" parent="UI/UInode/ShopMenuCanvas"]
+clip_contents = false
+offset_right = 400.0
+offset_bottom = 569.0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="VScrollBar" type="VBoxContainer" parent="UI/UInode/ShopMenuCanvas/SpecialScroll"]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+
+[node name="ShopMenu" type="TextureRect" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar"]
+texture_repeat = 2
+custom_minimum_size = Vector2(0, 3000)
+layout_mode = 2
+texture = ExtResource("28_1pbs2")
+stretch_mode = 1
+
+[node name="GridContainer" type="VBoxContainer" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu"]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 36.0
+offset_right = 356.0
+offset_bottom = 189.0
+
+[node name="GoldenFoxShop" type="Area2D" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer"]
+position = Vector2(5, 272)
+script = ExtResource("54_15p2c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/GoldenFoxShop"]
+position = Vector2(127.5, 79.5)
+shape = SubResource("RectangleShape2D_pqoro")
+
+[node name="Control" type="Panel" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/GoldenFoxShop"]
+custom_minimum_size = Vector2(0, 160)
+offset_left = -15.0
+offset_right = 271.0
+offset_bottom = 160.0
+size_flags_vertical = 3
+theme = SubResource("Theme_n4eeu")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/GoldenFoxShop/Control"]
+layout_mode = 2
+offset_top = 4.0
+offset_right = 290.0
+offset_bottom = 148.0
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/GoldenFoxShop/Control/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("57_jikxj")
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/GoldenFoxShop/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/GoldenFoxShop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture = ExtResource("11_7puev")
+expand_mode = 4
+
+[node name="GoldenFoxPrice" type="Label" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/GoldenFoxShop/Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85098, 0.580392, 1, 1)
+theme_override_colors/font_outline_color = Color(0.764706, 0.337255, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 22
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Control" type="Control" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/GoldenFoxShop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="CrazyFlowerShop" type="Area2D" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer"]
+position = Vector2(5, 78)
+script = ExtResource("55_i6ep3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/CrazyFlowerShop"]
+position = Vector2(127.5, 79.5)
+shape = SubResource("RectangleShape2D_pqoro")
+
+[node name="Control" type="Panel" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/CrazyFlowerShop"]
+custom_minimum_size = Vector2(0, 160)
+offset_left = -15.0
+offset_right = 271.0
+offset_bottom = 160.0
+size_flags_vertical = 3
+theme = SubResource("Theme_n4eeu")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/CrazyFlowerShop/Control"]
+layout_mode = 2
+offset_top = 4.0
+offset_right = 290.0
+offset_bottom = 148.0
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/CrazyFlowerShop/Control/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("59_0osw0")
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/CrazyFlowerShop/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/CrazyFlowerShop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture = ExtResource("11_7puev")
+expand_mode = 4
+
+[node name="SpecialFlowerPrice" type="Label" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/CrazyFlowerShop/Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85098, 0.580392, 1, 1)
+theme_override_colors/font_outline_color = Color(0.764706, 0.337255, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 22
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Control" type="Control" parent="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/CrazyFlowerShop/Control/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="UI/UInode/ShopMenuCanvas"]
+offset_right = 80.0
+offset_bottom = 80.0
+scale = Vector2(1.2, 1.2)
+texture_normal = ExtResource("56_evvhc")
+texture_hover = ExtResource("57_xlaxv")
+stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="UI/UInode/ShopMenuCanvas"]
+offset_left = 88.0
+offset_right = 392.0
+offset_bottom = 96.0
+texture = ExtResource("53_ax42k")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="UI/UInode/ShopMenuCanvas/TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = -17.5
+offset_right = 18.0
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.384314, 0.278431, 0.137255, 1)
+theme_override_font_sizes/font_size = 32
+text = "SHOP"
+horizontal_alignment = 1
+
+[node name="DroppingArea" type="Area2D" parent="UI/UInode/ShopMenuCanvas"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/UInode/ShopMenuCanvas/DroppingArea"]
+position = Vector2(823, 325.5)
+shape = SubResource("RectangleShape2D_xhjmc")
+
+[node name="TaskMenuCanvas" type="CanvasLayer" parent="UI/UInode"]
+layer = 4
+visible = false
+
+[node name="Dailytasks" type="ScrollContainer" parent="UI/UInode/TaskMenuCanvas"]
+clip_contents = false
+offset_top = 93.0
+offset_right = 800.0
+offset_bottom = 663.0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/UInode/TaskMenuCanvas/Dailytasks"]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="UI/UInode/TaskMenuCanvas/Dailytasks/VBoxContainer"]
+texture_repeat = 2
+custom_minimum_size = Vector2(0, 2000)
+layout_mode = 2
+texture = ExtResource("43_x3v7x")
+stretch_mode = 1
+
+[node name="TaskMenu" type="VBoxContainer" parent="UI/UInode/TaskMenuCanvas/Dailytasks/VBoxContainer/TextureRect"]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 31.0
+offset_right = 626.0
+offset_bottom = 172.0
+
+[node name="Control" type="Control" parent="UI/UInode/TaskMenuCanvas/Dailytasks/VBoxContainer/TextureRect/TaskMenu"]
+layout_mode = 2
+
+[node name="Tasks" type="VBoxContainer" parent="UI/UInode/TaskMenuCanvas/Dailytasks/VBoxContainer/TextureRect/TaskMenu"]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="UI/UInode/TaskMenuCanvas/Dailytasks/VBoxContainer/TextureRect/TaskMenu"]
+layout_mode = 2
+theme = SubResource("Theme_8rlc0")
+theme_override_colors/caret_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/font_size = 16
+placeholder_text = "Task Description"
+alignment = 1
+
+[node name="AddDailyTask" type="Button" parent="UI/UInode/TaskMenuCanvas/Dailytasks/VBoxContainer/TextureRect/TaskMenu/LineEdit"]
+layout_mode = 0
+offset_left = 544.0
+offset_top = -12.0
+offset_right = 635.0
+offset_bottom = 36.0
+theme = SubResource("Theme_etdo0")
+theme_override_font_sizes/font_size = 24
+text = "ADD"
+
+[node name="Weeklytasks" type="ScrollContainer" parent="UI/UInode/TaskMenuCanvas"]
+clip_contents = false
+offset_top = 93.0
+offset_right = 800.0
+offset_bottom = 663.0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/UInode/TaskMenuCanvas/Weeklytasks"]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="UI/UInode/TaskMenuCanvas/Weeklytasks/VBoxContainer"]
+texture_repeat = 2
+custom_minimum_size = Vector2(0, 2000)
+layout_mode = 2
+texture = ExtResource("43_x3v7x")
+stretch_mode = 1
+
+[node name="TaskMenu" type="VBoxContainer" parent="UI/UInode/TaskMenuCanvas/Weeklytasks/VBoxContainer/TextureRect"]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 31.0
+offset_right = 626.0
+offset_bottom = 172.0
+
+[node name="Control" type="Control" parent="UI/UInode/TaskMenuCanvas/Weeklytasks/VBoxContainer/TextureRect/TaskMenu"]
+layout_mode = 2
+
+[node name="Tasks" type="VBoxContainer" parent="UI/UInode/TaskMenuCanvas/Weeklytasks/VBoxContainer/TextureRect/TaskMenu"]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="UI/UInode/TaskMenuCanvas/Weeklytasks/VBoxContainer/TextureRect/TaskMenu"]
+layout_mode = 2
+theme = SubResource("Theme_8rlc0")
+theme_override_colors/caret_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/font_size = 16
+placeholder_text = "Task Description"
+alignment = 1
+
+[node name="AddWeeklyTask" type="Button" parent="UI/UInode/TaskMenuCanvas/Weeklytasks/VBoxContainer/TextureRect/TaskMenu/LineEdit"]
+layout_mode = 0
+offset_left = 544.0
+offset_top = -12.0
+offset_right = 635.0
+offset_bottom = 36.0
+theme = SubResource("Theme_etdo0")
+theme_override_font_sizes/font_size = 24
+text = "ADD"
+
+[node name="Yearlytasks" type="ScrollContainer" parent="UI/UInode/TaskMenuCanvas"]
+clip_contents = false
+offset_top = 93.0
+offset_right = 800.0
+offset_bottom = 663.0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/UInode/TaskMenuCanvas/Yearlytasks"]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="UI/UInode/TaskMenuCanvas/Yearlytasks/VBoxContainer"]
+texture_repeat = 2
+custom_minimum_size = Vector2(0, 2000)
+layout_mode = 2
+texture = ExtResource("43_x3v7x")
+stretch_mode = 1
+
+[node name="TaskMenu" type="VBoxContainer" parent="UI/UInode/TaskMenuCanvas/Yearlytasks/VBoxContainer/TextureRect"]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 31.0
+offset_right = 626.0
+offset_bottom = 172.0
+
+[node name="Control" type="Control" parent="UI/UInode/TaskMenuCanvas/Yearlytasks/VBoxContainer/TextureRect/TaskMenu"]
+layout_mode = 2
+
+[node name="Tasks" type="VBoxContainer" parent="UI/UInode/TaskMenuCanvas/Yearlytasks/VBoxContainer/TextureRect/TaskMenu"]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="UI/UInode/TaskMenuCanvas/Yearlytasks/VBoxContainer/TextureRect/TaskMenu"]
+layout_mode = 2
+theme = SubResource("Theme_8rlc0")
+theme_override_colors/caret_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/font_size = 16
+placeholder_text = "Task Description"
+alignment = 1
+
+[node name="AddYearlyTask" type="Button" parent="UI/UInode/TaskMenuCanvas/Yearlytasks/VBoxContainer/TextureRect/TaskMenu/LineEdit"]
+layout_mode = 0
+offset_left = 544.0
+offset_top = -12.0
+offset_right = 635.0
+offset_bottom = 36.0
+theme = SubResource("Theme_etdo0")
+theme_override_font_sizes/font_size = 24
+text = "ADD"
+
+[node name="TextureRect" type="TextureRect" parent="UI/UInode/TaskMenuCanvas"]
+offset_top = -3.0
+offset_right = 800.0
+offset_bottom = 93.0
+texture = ExtResource("44_4a8wi")
+stretch_mode = 4
+
+[node name="TaskMenuButtons" type="HBoxContainer" parent="UI/UInode/TaskMenuCanvas"]
+offset_left = 88.0
+offset_right = 776.0
+offset_bottom = 96.0
+theme_override_constants/separation = -8
+
+[node name="TextureButtonDaily" type="TextureButton" parent="UI/UInode/TaskMenuCanvas/TaskMenuButtons"]
+custom_minimum_size = Vector2(232, 0)
+layout_mode = 2
+theme = SubResource("Theme_7nank")
+texture_normal = ExtResource("47_mqgye")
+texture_pressed = ExtResource("48_8q88x")
+texture_hover = ExtResource("49_gpaww")
+texture_disabled = ExtResource("48_8q88x")
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="UI/UInode/TaskMenuCanvas/TaskMenuButtons/TextureButtonDaily"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -80.0
+offset_top = -17.5
+offset_right = 80.0
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.384314, 0.278431, 0.137255, 1)
+theme_override_font_sizes/font_size = 32
+text = "Daily"
+
+[node name="TextureButton2" type="TextureButton" parent="UI/UInode/TaskMenuCanvas/TaskMenuButtons"]
+custom_minimum_size = Vector2(232, 0)
+layout_mode = 2
+theme = SubResource("Theme_7nank")
+texture_normal = ExtResource("50_8v6ct")
+texture_pressed = ExtResource("51_86nby")
+texture_hover = ExtResource("52_qkjc4")
+texture_disabled = ExtResource("51_86nby")
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="UI/UInode/TaskMenuCanvas/TaskMenuButtons/TextureButton2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = -17.5
+offset_right = 96.0
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.384314, 0.278431, 0.137255, 1)
+theme_override_font_sizes/font_size = 32
+text = "Weekly"
+
+[node name="TextureButton3" type="TextureButton" parent="UI/UInode/TaskMenuCanvas/TaskMenuButtons"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+theme = SubResource("Theme_7nank")
+texture_normal = ExtResource("53_8xgxu")
+texture_pressed = ExtResource("54_psfpe")
+texture_hover = ExtResource("55_4k2ey")
+texture_disabled = ExtResource("54_psfpe")
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="UI/UInode/TaskMenuCanvas/TaskMenuButtons/TextureButton3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = -17.5
+offset_right = 96.0
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.384314, 0.278431, 0.137255, 1)
+theme_override_font_sizes/font_size = 32
+text = "Yearly"
+
+[node name="TaskMenuQuit" type="TextureButton" parent="UI/UInode/TaskMenuCanvas"]
+offset_right = 80.0
+offset_bottom = 80.0
+scale = Vector2(1.2, 1.2)
+texture_normal = ExtResource("56_evvhc")
+texture_hover = ExtResource("57_xlaxv")
+stretch_mode = 0
+
+[node name="SettingsMenuCanvas" type="CanvasLayer" parent="UI/UInode"]
+layer = 4
+visible = false
+
+[node name="TextureRect" type="TextureRect" parent="UI/UInode/SettingsMenuCanvas"]
+offset_right = 800.0
+offset_bottom = 566.0
+texture = ExtResource("43_x3v7x")
+
+[node name="ExitSettings" type="TextureButton" parent="UI/UInode/SettingsMenuCanvas"]
+offset_right = 80.0
+offset_bottom = 80.0
+scale = Vector2(1.2, 1.2)
+texture_normal = ExtResource("56_evvhc")
+texture_hover = ExtResource("57_xlaxv")
+stretch_mode = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/UInode/SettingsMenuCanvas"]
+offset_left = 68.0
+offset_top = 124.0
+offset_right = 723.0
+offset_bottom = 550.0
+
+[node name="Label" type="Label" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.384314, 0.278431, 0.137255, 1)
+theme_override_font_sizes/font_size = 32
+text = "Walking speed"
+
+[node name="Control2" type="Control" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="WalkingSlider" type="HSlider" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer"]
+layout_mode = 2
+theme_override_icons/grabber = ExtResource("65_u82mb")
+theme_override_icons/grabber_highlight = ExtResource("65_u82mb")
+theme_override_icons/grabber_disabled = ExtResource("65_u82mb")
+theme_override_styles/slider = SubResource("StyleBoxFlat_2p848")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_tm67m")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_tm67m")
+min_value = 1.0
+max_value = 3.0
+step = 0.5
+value = 1.5
+
+[node name="Control" type="HBoxContainer" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer/Control"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.384314, 0.278431, 0.137255, 1)
+text = "0.5x"
+
+[node name="Control" type="Control" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer/Control"]
+custom_minimum_size = Vector2(91, 0)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer/Control"]
+layout_mode = 2
+texture = ExtResource("66_ujlte")
+stretch_mode = 5
+
+[node name="Control2" type="Control" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer/Control"]
+custom_minimum_size = Vector2(420, 0)
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer/Control"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.384314, 0.278431, 0.137255, 1)
+text = "3x"
+
+[node name="Control3" type="Control" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.384314, 0.278431, 0.137255, 1)
+theme_override_font_sizes/font_size = 32
+text = "Days for setback"
+
+[node name="SetbackSlider" type="HSlider" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer"]
+layout_mode = 2
+theme_override_icons/grabber = ExtResource("65_u82mb")
+theme_override_icons/grabber_highlight = ExtResource("65_u82mb")
+theme_override_icons/grabber_disabled = ExtResource("65_u82mb")
+theme_override_styles/slider = SubResource("StyleBoxFlat_xww5s")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_04r1h")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_tm67m")
+min_value = 1.0
+max_value = 5.0
+value = 3.0
+
+[node name="Control4" type="HBoxContainer" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer/Control4"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.384314, 0.278431, 0.137255, 1)
+text = "1"
+
+[node name="Control" type="Control" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer/Control4"]
+custom_minimum_size = Vector2(288, 0)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer/Control4"]
+layout_mode = 2
+texture = ExtResource("66_ujlte")
+stretch_mode = 5
+
+[node name="Control2" type="Control" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer/Control4"]
+custom_minimum_size = Vector2(272, 0)
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer/Control4"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.384314, 0.278431, 0.137255, 1)
+text = "5
+"
+
+[node name="Control6" type="Control" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.384314, 0.278431, 0.137255, 1)
+theme_override_font_sizes/font_size = 32
+text = "Days for completion"
+
+[node name="completionslider" type="HSlider" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer"]
+layout_mode = 2
+theme_override_icons/grabber = ExtResource("65_u82mb")
+theme_override_icons/grabber_highlight = ExtResource("65_u82mb")
+theme_override_icons/grabber_disabled = ExtResource("65_u82mb")
+theme_override_styles/slider = SubResource("StyleBoxFlat_xww5s")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_04r1h")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_tm67m")
+min_value = 50.0
+value = 66.0
+
+[node name="Control5" type="HBoxContainer" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer/Control5"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.384314, 0.278431, 0.137255, 1)
+text = "50"
+
+[node name="Control" type="Control" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer/Control5"]
+custom_minimum_size = Vector2(165, 0)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer/Control5"]
+layout_mode = 2
+texture = ExtResource("66_ujlte")
+stretch_mode = 5
+
+[node name="Control2" type="Control" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer/Control5"]
+custom_minimum_size = Vector2(345, 0)
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="UI/UInode/SettingsMenuCanvas/VBoxContainer/Control5"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.384314, 0.278431, 0.137255, 1)
+text = "100"
+
+[node name="TextureRect2" type="TextureRect" parent="UI/UInode/SettingsMenuCanvas"]
+offset_left = 89.0
+offset_right = 776.0
+offset_bottom = 96.0
+texture = ExtResource("64_khh45")
+
+[node name="Label" type="Label" parent="UI/UInode/SettingsMenuCanvas/TextureRect2"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 47.0
+offset_top = -17.5
+offset_right = 303.0
+offset_bottom = 17.5
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.384314, 0.278431, 0.137255, 1)
+theme_override_font_sizes/font_size = 32
+text = "SETTINGS"
+
+[node name="CoinGenerations" type="CanvasLayer" parent="UI/UInode"]
+layer = 128
+
+[connection signal="pressed" from="UI/HBoxContainer/QuitButton" to="UI/UInode" method="_on_quit_button_pressed"]
+[connection signal="text_changed" from="UI/UInode/AddMenu/GridContainer/DescriptionEdit" to="UI/UInode" method="_on_description_edit_text_changed"]
+[connection signal="value_changed" from="UI/UInode/AddMenu/GridContainer/FrequencySlider" to="PlantGrid" method="_on_frequency_slider_value_changed"]
+[connection signal="pressed" from="UI/UInode/AddMenu/AddMenuQuit" to="UI/UInode" method="_on_add_menu_quit_pressed"]
+[connection signal="pressed" from="UI/UInode/AddMenu/AddMenuAdd" to="UI/UInode" method="_on_add_menu_add_pressed"]
+[connection signal="pressed" from="UI/UInode/AddButton" to="UI/UInode" method="_on_add_button_pressed"]
+[connection signal="pressed" from="UI/UInode/TaskButton" to="UI/UInode" method="_on_task_button_pressed"]
+[connection signal="pressed" from="UI/UInode/ShopButton" to="UI/UInode" method="_on_shop_button_pressed"]
+[connection signal="pressed" from="UI/UInode/SettingsButton" to="UI/UInode" method="_on_settings_button_pressed"]
+[connection signal="pressed" from="UI/UInode/ShopMenuCanvas/ShopButtons/DecorationButton" to="UI/UInode" method="_on_decoration_button_pressed"]
+[connection signal="pressed" from="UI/UInode/ShopMenuCanvas/ShopButtons/AnimalButton" to="UI/UInode" method="_on_animal_button_pressed"]
+[connection signal="pressed" from="UI/UInode/ShopMenuCanvas/ShopButtons/SpecialButton" to="UI/UInode" method="_on_special_button_pressed"]
+[connection signal="mouse_entered" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/GrassShop" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/GrassShop" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/GrassShop" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/GrassShop" method="_on_mouse_exited"]
+[connection signal="button_down" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/GrassShop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/GrassShop" method="_on_texture_button_button_down"]
+[connection signal="button_up" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/GrassShop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/GrassShop" method="_on_texture_button_button_up"]
+[connection signal="mouse_entered" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/BushShop" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/BushShop" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/BushShop" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/BushShop" method="_on_mouse_exited"]
+[connection signal="button_down" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/BushShop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/BushShop" method="_on_texture_button_button_down"]
+[connection signal="button_up" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/BushShop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/BushShop" method="_on_texture_button_button_up"]
+[connection signal="mouse_entered" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/SunflowerShop" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/SunflowerShop" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/SunflowerShop" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/SunflowerShop" method="_on_mouse_exited"]
+[connection signal="button_down" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/SunflowerShop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/SunflowerShop" method="_on_texture_button_button_down"]
+[connection signal="button_up" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/SunflowerShop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/SunflowerShop" method="_on_texture_button_button_up"]
+[connection signal="mouse_entered" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/VarenShop" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/VarenShop" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/VarenShop" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/VarenShop" method="_on_mouse_exited"]
+[connection signal="button_down" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/VarenShop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/VarenShop" method="_on_texture_button_button_down"]
+[connection signal="button_up" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/VarenShop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/VarenShop" method="_on_texture_button_button_up"]
+[connection signal="mouse_entered" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/FlowerbedShop" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/FlowerbedShop" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/FlowerbedShop" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/FlowerbedShop" method="_on_mouse_exited"]
+[connection signal="button_down" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/FlowerbedShop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/FlowerbedShop" method="_on_texture_button_button_down"]
+[connection signal="button_up" from="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/FlowerbedShop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/DecorationScroll/VScrollBar/ShopMenu/GridContainer/FlowerbedShop" method="_on_texture_button_button_up"]
+[connection signal="mouse_entered" from="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/FoxShop" to="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/FoxShop" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/FoxShop" to="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/FoxShop" method="_on_mouse_exited"]
+[connection signal="button_down" from="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/FoxShop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/FoxShop" method="_on_texture_button_button_down"]
+[connection signal="button_up" from="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/FoxShop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/FoxShop" method="_on_texture_button_button_up"]
+[connection signal="mouse_entered" from="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/Butterflyshop" to="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/Butterflyshop" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/Butterflyshop" to="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/Butterflyshop" method="_on_mouse_exited"]
+[connection signal="button_down" from="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/Butterflyshop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/Butterflyshop" method="_on_texture_button_button_down"]
+[connection signal="button_up" from="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/Butterflyshop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/Butterflyshop" method="_on_texture_button_button_up"]
+[connection signal="mouse_entered" from="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/DeerShop" to="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/DeerShop" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/DeerShop" to="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/DeerShop" method="_on_mouse_exited"]
+[connection signal="button_down" from="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/DeerShop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/DeerShop" method="_on_texture_button_button_down"]
+[connection signal="button_up" from="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/DeerShop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/AnimalScroll/VScrollBar/ShopMenu/VBoxContainer/DeerShop" method="_on_texture_button_button_up"]
+[connection signal="mouse_entered" from="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/GoldenFoxShop" to="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/GoldenFoxShop" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/GoldenFoxShop" to="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/GoldenFoxShop" method="_on_mouse_exited"]
+[connection signal="button_down" from="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/GoldenFoxShop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/GoldenFoxShop" method="_on_texture_button_button_down"]
+[connection signal="button_up" from="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/GoldenFoxShop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/GoldenFoxShop" method="_on_texture_button_button_up"]
+[connection signal="mouse_entered" from="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/CrazyFlowerShop" to="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/CrazyFlowerShop" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/CrazyFlowerShop" to="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/CrazyFlowerShop" method="_on_mouse_exited"]
+[connection signal="button_down" from="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/CrazyFlowerShop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/CrazyFlowerShop" method="_on_texture_button_button_down"]
+[connection signal="button_up" from="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/CrazyFlowerShop/Control/HBoxContainer/TextureButton" to="UI/UInode/ShopMenuCanvas/SpecialScroll/VScrollBar/ShopMenu/GridContainer/CrazyFlowerShop" method="_on_texture_button_button_up"]
+[connection signal="pressed" from="UI/UInode/ShopMenuCanvas/TextureButton" to="UI/UInode" method="_on_texture_button_pressed"]
+[connection signal="mouse_entered" from="UI/UInode/ShopMenuCanvas/DroppingArea" to="UI/UInode" method="_on_dropping_area_mouse_entered"]
+[connection signal="mouse_exited" from="UI/UInode/ShopMenuCanvas/DroppingArea" to="UI/UInode" method="_on_dropping_area_mouse_exited"]
+[connection signal="pressed" from="UI/UInode/TaskMenuCanvas/Dailytasks/VBoxContainer/TextureRect/TaskMenu/LineEdit/AddDailyTask" to="UI/UInode" method="_on_add_daily_task_pressed"]
+[connection signal="pressed" from="UI/UInode/TaskMenuCanvas/Weeklytasks/VBoxContainer/TextureRect/TaskMenu/LineEdit/AddWeeklyTask" to="UI/UInode" method="_on_add_weekly_task_pressed"]
+[connection signal="pressed" from="UI/UInode/TaskMenuCanvas/Yearlytasks/VBoxContainer/TextureRect/TaskMenu/LineEdit/AddYearlyTask" to="UI/UInode" method="_on_add_yearly_task_pressed"]
+[connection signal="pressed" from="UI/UInode/TaskMenuCanvas/TaskMenuButtons/TextureButtonDaily" to="UI/UInode" method="_on_texture_button_daily_pressed"]
+[connection signal="pressed" from="UI/UInode/TaskMenuCanvas/TaskMenuButtons/TextureButton2" to="UI/UInode" method="_on_texture_button_2_pressed"]
+[connection signal="pressed" from="UI/UInode/TaskMenuCanvas/TaskMenuButtons/TextureButton3" to="UI/UInode" method="_on_texture_button_3_pressed"]
+[connection signal="pressed" from="UI/UInode/TaskMenuCanvas/TaskMenuQuit" to="UI/UInode" method="_on_task_menu_quit_pressed"]
+[connection signal="pressed" from="UI/UInode/SettingsMenuCanvas/ExitSettings" to="UI/UInode" method="_on_exit_settings_pressed"]
+[connection signal="value_changed" from="UI/UInode/SettingsMenuCanvas/VBoxContainer/WalkingSlider" to="UI/UInode" method="_on_walking_slider_value_changed"]
+[connection signal="value_changed" from="UI/UInode/SettingsMenuCanvas/VBoxContainer/SetbackSlider" to="UI/UInode" method="_on_setback_slider_value_changed"]
+[connection signal="value_changed" from="UI/UInode/SettingsMenuCanvas/VBoxContainer/completionslider" to="UI/UInode" method="_on_completionslider_value_changed"]
